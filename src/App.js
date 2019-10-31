@@ -2,10 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Saludo from './components/saludo';
+import Contador from './components/contador';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Contador />
+        <Saludo />
         <User user={user} />
         <UsersList list={persons} />
       </header>
@@ -33,7 +38,6 @@ const UsersList = props => {
     </div>
   )
 };
-
 const user = {
   name: 'Alexander Henao',
   img: logo
